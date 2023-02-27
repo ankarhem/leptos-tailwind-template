@@ -1,0 +1,24 @@
+{
+  "name": "tailwind-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:css\" \"npm run dev:server\"",
+    "dev:css": "tailwindcss -i ./input.css -o ./style/output.css --watch",
+    "dev:server": "cargo leptos watch",
+    "test:e2e": "playwright test",
+    "test:unit": "cargo leptos test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "concurrently": "^7.6.0",
+    "tailwind-easy-theme": "^1.1.0",
+    "tailwindcss": "^3.2.7",
+    "@playwright/test": "^1.28.0"
+  }
+}
