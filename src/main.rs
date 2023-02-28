@@ -5,7 +5,7 @@ async fn main() -> std::io::Result<()> {
     use actix_web::*;
     use leptos::*;
     use leptos_actix::{generate_route_list, LeptosRoutes};
-    use leptos_start::app::*;
+    use leptos_start::{App, AppProps};
 
     let conf = get_configuration(None).await.unwrap();
     let addr = conf.leptos_options.site_addr;
